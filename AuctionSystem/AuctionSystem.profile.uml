@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4TdC8DF1EeiteOYGAC1a8g" name="Auction System" URI="https://www.eclipse.org/papyrus/Auction System">
+  <eAnnotations xmi:id="_4TdC8TF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_4TdC8jF1EeiteOYGAC1a8g" name="AuctionSystem" nsURI="https://www.eclipse.org/papyrus/Auction System" nsPrefix="AuctionSystem">
+      <eAnnotations xmi:id="_4TdC8zF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_4TdC9DF1EeiteOYGAC1a8g" key="originalName" value="Auction System"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_4TdC9TF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/4.0.0/UML" references="_4TdC-zF1EeiteOYGAC1a8g"/>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_4TdC9jF1EeiteOYGAC1a8g">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_4TdC9zF1EeiteOYGAC1a8g">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+  </elementImport>
+  <elementImport xmi:id="_4TdC-DF1EeiteOYGAC1a8g">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_4TdC-TF1EeiteOYGAC1a8g">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <elementImport xmi:id="_4TdC-jF1EeiteOYGAC1a8g">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Profile" xmi:id="_4TdC-zF1EeiteOYGAC1a8g" name="Auction System" URI="https://www.eclipse.org/papyrus/Auction System">
+    <eAnnotations xmi:id="_4TdC_DF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <contents xmi:type="ecore:EPackage" xmi:id="_4TdC_TF1EeiteOYGAC1a8g" name="AuctionSystem" nsURI="https://www.eclipse.org/papyrus/Auction System" nsPrefix="AuctionSystem">
+        <eAnnotations xmi:id="_4TdC_jF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_4TdC_zF1EeiteOYGAC1a8g" key="originalName" value="Auction System"/>
+        </eAnnotations>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDADF1EeiteOYGAC1a8g" name="Admin">
+          <eAnnotations xmi:id="_4TdDATF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDMTF1EeiteOYGAC1a8g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDAjF1EeiteOYGAC1a8g" name="username" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDBDF1EeiteOYGAC1a8g" name="password" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDBjF1EeiteOYGAC1a8g" name="Bid">
+          <eAnnotations xmi:id="_4TdDBzF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDODF1EeiteOYGAC1a8g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDCDF1EeiteOYGAC1a8g" name="created_by" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDCjF1EeiteOYGAC1a8g" name="Trade">
+          <eAnnotations xmi:id="_4TdDCzF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDPDF1EeiteOYGAC1a8g"/>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDDDF1EeiteOYGAC1a8g" name="Notification">
+          <eAnnotations xmi:id="_4TdDDTF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDPTF1EeiteOYGAC1a8g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDDjF1EeiteOYGAC1a8g" name="notification_title" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDEDF1EeiteOYGAC1a8g" name="description" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDEjF1EeiteOYGAC1a8g" name="User">
+          <eAnnotations xmi:id="_4TdDEzF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDRDF1EeiteOYGAC1a8g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDFDF1EeiteOYGAC1a8g" name="email" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDFjF1EeiteOYGAC1a8g" name="fullName" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDGDF1EeiteOYGAC1a8g" name="Auction">
+          <eAnnotations xmi:id="_4TdDGTF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDSzF1EeiteOYGAC1a8g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDGjF1EeiteOYGAC1a8g" name="itemName" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDHDF1EeiteOYGAC1a8g" name="description" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDHjF1EeiteOYGAC1a8g" name="created_by" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDIDF1EeiteOYGAC1a8g" name="Buyer" eSuperTypes="_4TdDEjF1EeiteOYGAC1a8g">
+          <eAnnotations xmi:id="_4TdDITF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDVTF1EeiteOYGAC1a8g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDIjF1EeiteOYGAC1a8g" name="username" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDJDF1EeiteOYGAC1a8g" name="password" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDJzF1EeiteOYGAC1a8g" name="AuctionSystemManager">
+          <eAnnotations xmi:id="_4TdDKDF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDXTF1EeiteOYGAC1a8g">
+            <details xmi:id="_4TdDKTF1EeiteOYGAC1a8g" key="originalName" value="Auction System Manager"/>
+          </eAnnotations>
+        </eClassifiers>
+        <eClassifiers xmi:type="ecore:EClass" xmi:id="_4TdDKjF1EeiteOYGAC1a8g" name="Seller" eSuperTypes="_4TdDEjF1EeiteOYGAC1a8g">
+          <eAnnotations xmi:id="_4TdDKzF1EeiteOYGAC1a8g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_4TdDXjF1EeiteOYGAC1a8g"/>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDLDF1EeiteOYGAC1a8g" name="username" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+          <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_4TdDLjF1EeiteOYGAC1a8g" name="password" ordered="false" lowerBound="1">
+            <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+          </eStructuralFeatures>
+        </eClassifiers>
+      </contents>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDMTF1EeiteOYGAC1a8g" name="Admin">
+      <ownedAttribute xmi:id="_4TdDMjF1EeiteOYGAC1a8g" name="username">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDMzF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDNDF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4TdDNTF1EeiteOYGAC1a8g" name="password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDNjF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDNzF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDODF1EeiteOYGAC1a8g" name="Bid">
+      <ownedAttribute xmi:id="_4TdDOTF1EeiteOYGAC1a8g" name="created_by">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDOjF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDOzF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDPDF1EeiteOYGAC1a8g" name="Trade"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDPTF1EeiteOYGAC1a8g" name="Notification">
+      <ownedAttribute xmi:id="_4TdDPjF1EeiteOYGAC1a8g" name="notification_title">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDPzF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDQDF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4TdDQTF1EeiteOYGAC1a8g" name="description">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDQjF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDQzF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDRDF1EeiteOYGAC1a8g" name="User">
+      <ownedAttribute xmi:id="_4TdDRTF1EeiteOYGAC1a8g" name="email">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDRjF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDRzF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4TdDSDF1EeiteOYGAC1a8g" name="fullName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDSTF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDSjF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDSzF1EeiteOYGAC1a8g" name="Auction">
+      <ownedAttribute xmi:id="_4TdDTDF1EeiteOYGAC1a8g" name="itemName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDTTF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDTjF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4TdDTzF1EeiteOYGAC1a8g" name="description">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDUDF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDUTF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4TdDUjF1EeiteOYGAC1a8g" name="created_by">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDUzF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDVDF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDVTF1EeiteOYGAC1a8g" name="Buyer">
+      <generalization xmi:id="_4TdDVjF1EeiteOYGAC1a8g" general="_4TdDRDF1EeiteOYGAC1a8g"/>
+      <ownedAttribute xmi:id="_4TdDVzF1EeiteOYGAC1a8g" name="username">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDWDF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDWTF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4TdDWjF1EeiteOYGAC1a8g" name="password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDWzF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDXDF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDXTF1EeiteOYGAC1a8g" name="Auction System Manager"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="_4TdDXjF1EeiteOYGAC1a8g" name="Seller">
+      <generalization xmi:id="_4TdDXzF1EeiteOYGAC1a8g" general="_4TdDRDF1EeiteOYGAC1a8g"/>
+      <ownedAttribute xmi:id="_4TdDYDF1EeiteOYGAC1a8g" name="username">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDYTF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDYjF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_4TdDYzF1EeiteOYGAC1a8g" name="password">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4TdDZDF1EeiteOYGAC1a8g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4TdDZTF1EeiteOYGAC1a8g" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Profile>
