@@ -5,7 +5,7 @@ public class Bid {
 	/**
 	 * 
 	 */
-	private String created_by;
+	public String created_by;
 	/**
 	 * 
 	 */
@@ -25,8 +25,12 @@ public class Bid {
 	/**
 	 * Getter of created_by
 	 */
+	public Bid(String created_by, double amount) {
+		this.created_by = created_by;
+		this.amount = amount;
+	}
 	public String getCreated_by() {
-	 	 return created_by; 
+	 	 return this.created_by;
 	}
 	/**
 	 * Setter of created_by

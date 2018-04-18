@@ -17,7 +17,7 @@ public class Auction {
 	/**
 	 * 
 	 */
-	public int itemID;
+	public int itemID = 1;
 	/**
 	 * 
 	 */
@@ -33,6 +33,18 @@ public class Auction {
 	/**
 	 * Getter of auction_Open
 	 */
+	Bid b = new Bid("None", 0.0);
+	
+	public Auction(String itemName, String description, double base_amount, String created_by) {
+		this.auction_Open = true;
+		this.itemName = itemName;
+		this.description = description;
+		this.base_amount = base_amount;
+		this.created_by = created_by;
+		
+		
+	}
+	
 	public boolean getAuction_Open() {
 	 	 return auction_Open; 
 	}
@@ -40,7 +52,7 @@ public class Auction {
 	 * Setter of auction_Open
 	 */
 	public void setAuction_Open(boolean auction_Open) { 
-		 this.auction_Open = auction_Open; 
+		 this.auction_Open = auction_Open;
 	}
 	/**
 	 * Getter of Count_Auction
@@ -51,26 +63,24 @@ public class Auction {
 	/**
 	 * Setter of Count_Auction
 	 */
-	public void setCount_Auction(int Count_Auction) { 
-		 this.Count_Auction = Count_Auction; 
-	}
+	
 	/**
 	 * Getter of base_amount
 	 */
 	public double getBase_amount() {
-	 	 return base_amount; 
+	 	 return this.base_amount; 
 	}
 	/**
 	 * Setter of base_amount
 	 */
-	public void setBase_amount(double base_amount) { 
-		 this.base_amount = base_amount; 
+	public void setBase_amount(double base_amount) {
+		 this.base_amount = base_amount;
 	}
 	/**
 	 * Getter of itemID
 	 */
 	public int getItemID() {
-	 	 return itemID; 
+	 	 return this.itemID;
 	}
 	/**
 	 * Setter of itemID
@@ -82,7 +92,7 @@ public class Auction {
 	 * Getter of itemName
 	 */
 	public String getItemName() {
-	 	 return itemName; 
+	 	 return this.itemName; 
 	}
 	/**
 	 * Setter of itemName
@@ -94,7 +104,7 @@ public class Auction {
 	 * Getter of created_by
 	 */
 	public String getCreated_by() {
-	 	 return created_by; 
+	 	 return this.created_by;
 	}
 	/**
 	 * Setter of created_by
@@ -106,7 +116,7 @@ public class Auction {
 	 * Getter of description
 	 */
 	public String getDescription() {
-	 	 return description; 
+	 	 return this.description; 
 	}
 	/**
 	 * Setter of description
@@ -114,14 +124,18 @@ public class Auction {
 	public void setDescription(String description) { 
 		 this.description = description; 
 	}
-	public void closeAuction(int auction) { 
+	public void closeAuction(int itemID) { 
 		// TODO Auto-generated method
+		this.auction_Open = false;
 	 }
 	/**
 	 * 
 	 */
 	public void view_details() { 
 		// TODO Auto-generated method
+		System.out.printf("%d\t\t%s\t\t%s\t\t%.2f\t\t%s\t\t%b\t\t%.2f\t\t%s\n", 
+				this.itemID, this.itemName, this.description, this.base_amount, 
+				this.created_by, this.auction_Open, this.b.getAmount(), this.b.getCreated_by());
 	 }
 	/**
 	 * 
@@ -147,6 +161,7 @@ public class Auction {
 	 */
 	public void get_all_running_auction() { 
 		// TODO Auto-generated method
+		
 	 } 
 
 }
