@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------------------------------
+                                   Welcome to the Auction System
+                                             Build By
+                                          Concept Squad
+-------------------------------------------------------------------------------------------------------
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 3
+Enter Your Name: Anjali
+Enter Your Item Name: Laptop
+Enter Your Item Description (Max 15 Char): HP laptop
+Enter Your Base Price: 1700
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+2		Laptop		HP laptop		1700.00		Anjali		true		0.00		None
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 3
+Enter Your Name: Mayank
+Enter Your Item Name: Iphone
+Enter Your Item Description (Max 15 Char): Iphone 7
+Enter Your Base Price: 1100
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+2		Laptop		HP laptop		1700.00		Anjali		true		0.00		None
+3		Iphone		Iphone 7		1100.00		Mayank		true		0.00		None
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 4
+Enter Your Name: Sachin
+Enter Auction ID on which you want to place a bid: 2
+Enter Bid amount: 2500
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+2		Laptop		HP laptop		1700.00		Anjali		false		2500.00		Sachin
+3		Iphone		Iphone 7		1100.00		Mayank		true		0.00		None
+Thank You for using auction system
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 2
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+2		Laptop		HP laptop		1700.00		Anjali		false		2500.00		Sachin
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 5
+Thank You for using auction system

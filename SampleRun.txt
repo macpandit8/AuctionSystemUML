@@ -1,0 +1,102 @@
+-------------------------------------------------------------------------------------------------------
+                                   Welcome to the Auction System
+                                             Build By
+                                          Concept Squad
+-------------------------------------------------------------------------------------------------------
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 1
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 2
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 1
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 2
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 3
+Enter Your Name: Mayank
+Enter Your Item Name: Dell
+Enter Your Item Description (Max 15 Char): Black Laptop
+Enter Your Base Price: 900
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+2		Dell		Black Laptop		900.00		Mayank		true		0.00		None
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 3
+Enter Your Name: Hriday
+Enter Your Item Name: Note8
+Enter Your Item Description (Max 15 Char): Black Note8
+Enter Your Base Price: 1200
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+2		Dell		Black Laptop		900.00		Mayank		true		0.00		None
+3		Note8		Black Note8		1200.00		Hriday		true		0.00		None
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 4
+Enter Your Name: Hriday
+Enter Auction ID on which you want to place a bid: 2
+Enter Bid amount: 800
+Please Enter Bid amount more than the base price
+Enter Bid amount: 900
+Please Enter Bid amount more than the base price
+Enter Bid amount: 1200
+
+Auction ID	Item Name	Item Description	Base Price	Created By	Auction Open	Winning Bid	Winner
+1		BMW Car		Blue BMW Car		5000.00		Mayank		true		0.00		None
+2		Dell		Black Laptop		900.00		Mayank		false		1200.00		Hriday
+3		Note8		Black Note8		1200.00		Hriday		true		0.00		None
+Thank You for using auction system
+
+Select one of the options (Enter Respective Digit)
+1 - Show open auctions		2 - Show close auctions
+3 - Create Auction		4 - Bid on Running Auction
+5 - Exit
+
+Enter your response here: 5
+Thank You for using auction system
