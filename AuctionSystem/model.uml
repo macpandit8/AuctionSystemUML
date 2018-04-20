@@ -582,12 +582,69 @@ activity AuctionSystemManager_Factory(in x:Integer, in y:Integer): AuctionSystem
           <node xmi:type="uml:ActivityParameterNode" xmi:id="_T3GOUELGEei4PLFCRYLxAQ" name="Return" incoming="_T3GOVkLGEei4PLFCRYLxAQ" parameter="_T3GOR0LGEei4PLFCRYLxAQ"/>
           <node xmi:type="uml:ActivityFinalNode" xmi:id="_T3GOUULGEei4PLFCRYLxAQ" name="FinalNode('AuctionSystemManager_Factory')" incoming="_T3GOUkLGEei4PLFCRYLxAQ"/>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:Activity" xmi:id="_ti9IcELGEei4PLFCRYLxAQ" name="CalculateWInner" node="_3RHP2kLGEei4PLFCRYLxAQ _3RHP20LGEei4PLFCRYLxAQ _3RHP3ULGEei4PLFCRYLxAQ _3RHP3kLGEei4PLFCRYLxAQ _3RHP4ELGEei4PLFCRYLxAQ _3RHP4ULGEei4PLFCRYLxAQ _3RHP50LGEei4PLFCRYLxAQ" group="_3RHP50LGEei4PLFCRYLxAQ">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_ti9IcELGEei4PLFCRYLxAQ" name="CalculateWInner" specification="_GH2MoBkcEeiS9erITcgIrg" node="_3RHP2kLGEei4PLFCRYLxAQ _3RHP20LGEei4PLFCRYLxAQ _3RHP3ULGEei4PLFCRYLxAQ _3RHP3kLGEei4PLFCRYLxAQ _3RHP4ELGEei4PLFCRYLxAQ _3RHP4ULGEei4PLFCRYLxAQ _3RHP50LGEei4PLFCRYLxAQ" group="_3RHP50LGEei4PLFCRYLxAQ">
           <ownedComment xmi:type="uml:Comment" xmi:id="_3F3CEELGEei4PLFCRYLxAQ">
             <body>namespace AuctionSystem::AuctionSystemManager;&#xD;
 &#xD;
-activity CalculateWInner(in x:Integer, in y:Integer):Integer {&#xD;
-	return x+y;&#xD;
+package Arrays {&#xD;
+	public class Array&lt;T> {&#xD;
+		&#xD;
+		// This data type is used to allow for null elements in the array.&#xD;
+		private datatype Value&lt;T> {&#xD;
+			public value : T[0..1];&#xD;
+		}&#xD;
+		&#xD;
+		private content : Value&lt;T>[*] sequence;&#xD;
+		&#xD;
+		@Create&#xD;
+		public Array(in size : Integer) {&#xD;
+			for (i in 1..size) {&#xD;
+				this.content->add(new Value&lt;T>(null));&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+		// This will automatically return null for indices outside the&#xD;
+		// bounds of the array.&#xD;
+		public get(in i : Integer) : T[0..1] {&#xD;
+			return this.content[i].value;&#xD;
+		}&#xD;
+		&#xD;
+		// This will have no effect for indices outside the bounds of&#xD;
+		// the array.&#xD;
+		public put(in i : Integer, in value : T[0..1]) {&#xD;
+			this.content[i] = new Value&lt;T>(value);&#xD;
+		}&#xD;
+		&#xD;
+		// This will return the elements of the array with null elements&#xD;
+		// removed.&#xD;
+		public toSequence() : T[*] {&#xD;
+			return this.content.value;&#xD;
+		}&#xD;
+	}&#xD;
+}&#xD;
+&#xD;
+package PrimitiveTypes {&#xD;
+&#xD;
+  @primitive public datatype Boolean {}&#xD;
+  @primitive public datatype Integer {}&#xD;
+  @primitive public datatype String {}&#xD;
+  @primitive public datatype UnlimitedNatural {}&#xD;
+  @primitive public datatype Real {}&#xD;
+  &#xD;
+}		&#xD;
+	&#xD;
+activity CalculateWInner(){&#xD;
+	a = new Array&lt;Integer>(42);&#xD;
+	a.put(1,1);&#xD;
+	a.put(2,2);&#xD;
+	a.put(42,42);&#xD;
+	&#xD;
+	WriteLine(&quot;a[1] = &quot; + (a.get(1) == null? &quot;null&quot;: ToString(a.get(1))));&#xD;
+	WriteLine(&quot;a[2] = &quot; + (a.get(2) == null? &quot;null&quot;: ToString(a.get(2))));&#xD;
+	WriteLine(&quot;a[3] = &quot; + (a.get(3) == null? &quot;null&quot;: ToString(a.get(3))));&#xD;
+	WriteLine(&quot;a[42] = &quot; + (a.get(42) == null? &quot;null&quot;: ToString(a.get(42))));&#xD;
+&#xD;
+	a.toSequence()->iterate i (WriteLine(ToString(i)));&#xD;
 }</body>
           </ownedComment>
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_3RHP0ULGEei4PLFCRYLxAQ" name="x">
@@ -646,7 +703,7 @@ activity CalculateWInner(in x:Integer, in y:Integer):Integer {&#xD;
         </ownedBehavior>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_1yJwkBkbEeiS9erITcgIrg" name="sendVoiceNotification"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_8z4G4BkbEeiS9erITcgIrg" name="send_SenderBuyerDetails"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_GH2MoBkcEeiS9erITcgIrg" name="calculateWinner"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_GH2MoBkcEeiS9erITcgIrg" name="calculateWinner" method="_ti9IcELGEei4PLFCRYLxAQ"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_zeLvkBkrEeiS9erITcgIrg" name="sendTextNotification"/>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_V8itQELFEei4PLFCRYLxAQ" name="AuctionSystemManager">
           <ownedParameter xmi:type="uml:Parameter" xmi:id="_V8kicELFEei4PLFCRYLxAQ" name="return" type="_tP6fMBkaEeiS9erITcgIrg" direction="return"/>
@@ -966,12 +1023,12 @@ activity CalculateWInner(in x:Integer, in y:Integer):Integer {&#xD;
   <ActionLanguage:TextualRepresentation xmi:id="_lo2VcELCEei4PLFCRYLxAQ" base_Comment="_lo1uYELCEei4PLFCRYLxAQ" language="Alf"/>
   <BackupProfile:Backup xmi:id="_lo2VcULCEei4PLFCRYLxAQ" timestamp="2018-04-18 01:03:59.943" state="MERGED" base_Comment="_lo1uYELCEei4PLFCRYLxAQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_lo3jkELCEei4PLFCRYLxAQ" base_Comment="_lo28gELCEei4PLFCRYLxAQ" language="Alf"/>
-  <BackupProfile:Backup xmi:id="_lo3jkULCEei4PLFCRYLxAQ" timestamp="2018-04-18 00:59:58.795" state="MERGED" base_Comment="_lo28gELCEei4PLFCRYLxAQ"/>
+  <BackupProfile:Backup xmi:id="_lo3jkULCEei4PLFCRYLxAQ" timestamp="2018-04-19 14:33:49.831" state="MERGED" base_Comment="_lo28gELCEei4PLFCRYLxAQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_Z08XoELEEei4PLFCRYLxAQ" base_Comment="_ZvtSUELEEei4PLFCRYLxAQ" language="Alf"/>
-  <BackupProfile:Backup xmi:id="_Z08-sELEEei4PLFCRYLxAQ" timestamp="2018-04-18 00:59:24.684" state="MERGED" base_Comment="_ZvtSUELEEei4PLFCRYLxAQ"/>
+  <BackupProfile:Backup xmi:id="_Z08-sELEEei4PLFCRYLxAQ" timestamp="2018-04-19 21:08:43.623" state="MERGED" base_Comment="_ZvtSUELEEei4PLFCRYLxAQ"/>
   <standard:Create xmi:id="_V8lJgELFEei4PLFCRYLxAQ" base_BehavioralFeature="_V8itQELFEei4PLFCRYLxAQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_WBjJEULFEei4PLFCRYLxAQ" base_Comment="_WBjJEELFEei4PLFCRYLxAQ" language="Alf"/>
   <BackupProfile:Backup xmi:id="_WBjJEkLFEei4PLFCRYLxAQ" timestamp="2018-04-18 01:06:53.018" state="MERGED" base_Comment="_WBjJEELFEei4PLFCRYLxAQ"/>
   <ActionLanguage:TextualRepresentation xmi:id="_3F3CEULGEei4PLFCRYLxAQ" base_Comment="_3F3CEELGEei4PLFCRYLxAQ" language="Alf"/>
-  <BackupProfile:Backup xmi:id="_3F3CEkLGEei4PLFCRYLxAQ" timestamp="2018-04-18 01:10:50.352" state="MERGED" base_Comment="_3F3CEELGEei4PLFCRYLxAQ"/>
+  <BackupProfile:Backup xmi:id="_3F3CEkLGEei4PLFCRYLxAQ" timestamp="2018-04-19 21:46:34.474" base_Comment="_3F3CEELGEei4PLFCRYLxAQ"/>
 </xmi:XMI>

@@ -1,6 +1,5 @@
 
-
-************************************************CONCEPT SQUAD***********************************************************************
+**********************************CONCEPT SQUAD**********************************************
 
 >> Made an ArrayList of Auction class which takes saveral parameters to create an auction.
 
@@ -13,6 +12,10 @@
 >> Program executes particular part of the code according to the selected option
 
 >> User cannot bid on an item, the auction for which is already closed
+
+>> This modification has arrays.alf file in which we have initialized 
+   arrays and we tried to implemented in activity diagram.
+
 
 
 Thank You
